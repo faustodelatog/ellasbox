@@ -1,1 +1,1 @@
-web: bundle exec rake db:schema:load db:migrate
+release: bundle exec rake db:schema:load db:migrate
