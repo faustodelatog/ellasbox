@@ -4,7 +4,6 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-schema_search_path: ellasbox
 default: &default
   adapter: sqlite3
   pool: 5
@@ -20,12 +19,14 @@ default: &default
 test:
   <<: *default
   database: db/test.sqlite3
+  schema_search_path: ellasbox
 
 production:
   adapter: postgresql
   host: localhost
   username: user
   database: app-dev
+  schema_search_path: ellasbox
 
 development:
   adapter: postgresql
