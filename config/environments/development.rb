@@ -50,7 +50,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
       address:              'smtp.zoho.com',
       port:                 587,
-      domain:               'maleboxgifts.herokuapp.com',
+      domain:               'ellasbox.herokuapp.com',
       user_name:            ENV['MAIL_USERNAME'],
       password:             ENV['MAIL_PASSWORD'],
       authentication:       'plain',
